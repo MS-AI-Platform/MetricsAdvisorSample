@@ -52,6 +52,6 @@ By just a few clicks and going through the automatic diagnostic information in a
 Joe was super grateful for Sam's quick turn around and actually, Sam went above and beyond what Joe knew. With Metrics Advisor, Sam also receives other alerts from the infrastructure data that Sam's team had taken preventive actions to those infrastructural influence before they make serious impact to business.
 Now, this is definitely making Joe's life much easier.
 
-Compared with traditional way, it saves **95%** time to discover and mitigate one issue, which could avoid thousands of dollars revenue loss. But more importantly, the company has managed to provide a robust service which wins customer's trust and empowers bigger business growth. 
+Compared with traditional way, it saves **95%** time to discover and mitigate one issue, which could avoid **thousands of dollars** revenue loss. But more importantly, the company has managed to provide **a robust service** which wins customer's trust and empowers bigger **business growth**. 
 
 Recently, Sam is looking to customize a platform to connect deeply with their other tools. Luckily, Metrics Advisor has brought all capabilities with its web UI, as well as a rich set of rest APIs, SDK libraries in Java, JavaScript, .NET, and Python, that can make coding as a service, much easier.
