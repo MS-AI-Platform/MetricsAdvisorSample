@@ -65,5 +65,5 @@ Aside of performing anomaly detection on metrics, Metrics Advisor also provides 
 To complete the full demo, you will need to create a graph like below. It's a quite simple experience, if you need any guidance, please refer to [Build a metrics graph](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/metrics-graph).
 
 # Step5 View demo script and present the demo
-The [demo script](Demo script.md) is published in the repository as well, please go through that first and get familiar with the demo story. After checking all the metrics data is onboarded and having the latest detection results. Then you're ready to go! 
+The [demo script](Demo_script.md) is published in the repository as well, please go through that first and get familiar with the demo story. After checking all the metrics data is onboarded and having the latest detection results. Then you're ready to go! 
 
