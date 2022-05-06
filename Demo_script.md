@@ -1,17 +1,17 @@
 # Context and customer pain-points
-Let's meet Joe, who is the CEO of the toy manufacturer and also owns a e-commerce website.
+Let's meet Joe, who is the CEO of an e-commerce company which sells a wide range of products.
 The company is totally data driven, lots of telemetries are logged and monitored actively. From business critical metrics such as 'Cost/Revenue', 'Daily active users' of the website, to service performance metrics like 'Page load time' and 'Cache hit rate' are all been logged and stored in a relational database.
 It's been a great pain-point that even has tons of telemetries collected, it's still hard to run the business smoothly. They've tried to monitor those metrics via static rules and thresholds. 
 But eventually gave up, because of alert fatigue. Additionally, every time if there's any issue, it's either been missed and caused great impact, or it costs tons of time to find the root cause of the issue. The distresses hurt customer experiences a lot and lead to huge business loss.
 Take use of the telemetries effectively and get all pieces run together is crucial to business success. 
 
 # How Metrics Advisor helps
-Joe's company has taken Metrics Advisor as their business monitoring solution. Sam who manages the IT department of the toy company onboarded all telemetries to Metrics Advisor. 
+Joe's company has taken Metrics Advisor as their business monitoring solution. Sam who manages the IT department of the company onboarded all telemetries to Metrics Advisor. 
 Like all Azure services, Sam first goes to Azure to create a Metrics Advisor resource.
 Then he goes to the portal of Metrics Advisor. From there, he selects his instance of Metrics Advisor web-based workspace and jumps into it.
-Now Sam's going to onboard the time series data for both the business metrics, IT telemetries.
-Take business metrics as an example, to onboard cost/revenue metrics, firstly set the correct source type, granularity and start time, as well as the connection information and the query.
-Then set the right schema and a few additional configurations before submitting the data feed.
+Now Sam's going to onboard the time series data for both the business metrics and service telemetries.
+Take business metrics as an example, to onboard cost/revenue metrics, firstly set the correct source type, granularity and ingestion start time, as well as the connection information and the query.
+Then set the right metric schema and a few additional configurations before submitting the data feed.
 
 Note that the 'category' column and the 'region' column are set as dimensions, as that could enable the platform to monitor the cost/revenue from all different region & category combinations, and diagnose easily when there is an issue.
 An aggregation rule is also specified so that Metrics Advisor will roll up the two dimensions automatically and a monitor that cost/revenue from aggregated region and category.
