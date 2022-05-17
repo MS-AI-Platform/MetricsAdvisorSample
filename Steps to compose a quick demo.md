@@ -13,7 +13,7 @@ Open SQL Server management studio, choose one database where you'd like to put s
 | :exclamation: Remember to create one table for each sample file, eventually you need to have **four tables** created in your database!  |
 |-----------------------------------------|
 
-:::image type="content" source="../media/import_data.png" alt-text="Import metrics data" lightbox="../media/import_data.png":::
+![import data](../media/import_data.png)
 
 # Step3 create data feeds
 After resource is created and sample data has been ingested to the database, go to [Metrics Advisor landing page](https://metricsadvisor.azurewebsites.net) to choose the workspace you just created and click 'Get started' to login. 
@@ -66,7 +66,7 @@ Aside of performing anomaly detection on metrics, Metrics Advisor also provides 
 
 To complete the full demo, you will need to create a graph like below. It's a quite simple experience, if you need any guidance, please refer to [Build a metrics graph](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/metrics-graph).
 
-:::image type="content" source="../media/metrics_graph.png" alt-text="Import metrics data" lightbox="../media/metrics_graph.png":::
+![Metrics graph](../media/metrics_graph.png)
 
 # Step5 View demo script and present the demo
 The [demo script](Demo_script.md) is published in the repository as well, please go through that first and get familiar with the demo story. After checking all the metrics data is onboarded and having the latest detection results. Then you're ready to go! 
