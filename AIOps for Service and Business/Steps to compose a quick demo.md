@@ -13,7 +13,7 @@ Open SQL Server management studio, choose one database where you'd like to put s
 | :exclamation: Remember to create one table for each sample file, eventually you need to have **four tables** created in your database!  |
 |-----------------------------------------|
 
-![import data](media/import_data.png)
+![import data](../media/import_data.png)
 
 # Step3 create data feeds
 After resource is created and sample data has been ingested to the database, go to [Metrics Advisor landing page](https://metricsadvisor.azurewebsites.net) to choose the workspace you just created and click 'Get started' to login. 
@@ -46,7 +46,7 @@ Choose 'Import' button at top right, paste following configuration into the dial
 ```
 {"datafeed":{"datafeedId":"","datafeedName":"Sample_DAU","createdTime":"","metrics":[{"metricId":"","metricName":"DAU","metricDisplayName":"Daily Active Users","metricDescription":"","metricType":"NORMAL","derivedScript":"","seriesCount":10}],"dimensions":[{"dimensionName":"region","dimensionDisplayName":"region"}],"dataStartFrom":"2022-4-20T00:00:00Z","dataSourceType":"SqlServer","parameterList":[{"name":"connectionString","value":"Data Source=**replace with your DB server**;Initial Catalog=**replace with your DB name**;User Id=**replace with your user Id**;Password=**replace with your password**;","requiredBy":["ServicePrincipal","ManagedIdentity","ServicePrincipalInKV","Basic"]},{"name":"query","value":"SELECT @StartTime as timestamp, CASE WHEN (GROUPING(region) = 1) THEN 'SUM' ELSE ISNULL(region, 'UNKNOWN') END as region, SUM(dau) as DAU FROM **replace with your table name of DAU metrics** WHERE timestamp = @IntervalStart GROUP BY CUBE(region)","requiredBy":null}],"timestampColumn":"timestamp","startOffsetInSeconds":0,"maxQueryPerMinute":30,"detectionStartTime":null,"granularityName":"Daily","granularityAmount":null,"allUpIdentification":"SUM","needRollup":"RollupByUser","fillMissingPointForAd":"AutoFillValue","fillMissingPointForAdValue":0,"rollUpMethod":"None","extendedDimensions":null,"rollUpColumns":"","datafeedDescription":"","stopRetryAfterInSeconds":-1,"minRetryIntervalInSeconds":-1,"maxConcurrency":-1,"viewMode":"Private","admins":["**replace with your AAD credential(usually your email)**"],"viewers":[],"creator":"**replace with your AAD credential(usually your email)**","status":"Active","actionLinkTemplate":"","credentialUUID":null,"authenticationType":"Basic","enableAD":true,"enableIngestion":true,"maxDataRetention":-1,"isAdmin":true,"migrationType":0,"ingestionType":"Batch","datapointCount":63750},"delayAlertConfig":{"datafeedId":null,"gracePeriodInSeconds":null,"snoozeAlertCount":null,"hook":[],"configId":null,"alertType":null},"billingAccount":""}
 ```
-Choose 'Apply' and 'Submit', then your data feed for DAU metric is onboarded successfully. It will take some time to get all the historical data ingested and process for detection resutls. You can move to create the next data feed.
+Choose 'Apply' and 'Submit', then your data feed for DAU metric is onboarded successfully. It will take some time to get all the historical data ingested and process for detection results. You can move to create the next data feed.
 | :exclamation: Please notice to replace values of following fields using your own!!! **'Data source', 'Initial catalog','user id', 'password', 'table name', 'admins','creator'**. |
 |-----------------------------------------|
 
@@ -66,8 +66,7 @@ Aside of performing anomaly detection on metrics, Metrics Advisor also provides 
 
 To complete the full demo, you will need to create a graph like below. It's a quite simple experience, if you need any guidance, please refer to [Build a metrics graph](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/metrics-graph).
 
-![Metrics graph](media/metrics_graph.png)
+![Metrics graph](../media/metrics_graph.png)
 
 # Step5 View demo script and present the demo
-The [demo script](Demo_script.md) is published in the repository as well, please go through that first and get familiar with the demo story. After checking all the metrics data is onboarded and having the latest detection results. Then you're ready to go! 
-
+The [demo script](Demo_script.md) is published in the repository as well, please go through that first and get familiar with the demo story. After checking all the metrics data is onboarded and having the latest detection results. Then you're ready to go!

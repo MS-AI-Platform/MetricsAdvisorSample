@@ -20,7 +20,7 @@ An aggregation rule is also specified so that Metrics Advisor will roll up the t
 Next, is to tune the models to ensure they detect anomalies as expected.
 The knowledge of what values of the parameters that works for the data come from the proof of concept stage before production usage.
 
-During that stage, Sam's team has run some validation on a relatively small, but representative dataset and got the best parameter value that works with the sample dataset forthe best tradeoff between precision and recall.
+During that stage, Sam's team has run some validation on a relatively small, but representative dataset and got the best parameter value that works with the sample dataset for the best tradeoff between precision and recall.
 They apply those configurations to the production data and are ready to further fine tune the parameters in case the production data results deviate from the POC results.
 With that, Sam could set up alerting on instance, which enables e-mail alerts for metrics onboarded.
 
@@ -38,7 +38,7 @@ Now it's all set. Let's give it a go and see what it can do.
 On xx month yy day, the business manager Joe, receives an alert that the overall Revenue has a significant drop. He clicks on the anomaly that detected on **'region=SUM' and 'category=SUM'**, and chooses **'To incident hub'**, then he is directed to the incident analysis page.
 
 ### Pinpoint issue into specific dimension
-In the incident diagnostic page, Joe quickly goes through the current abnormal status at the beginning and checks the 'Analyzed root cause' part, which is automatically analyzed by the system. It helps quickly pinpoint the issue into specific dimention of 'region=Karachi' and 'category=SUM'. Then he gets to know the most potential root cause. 
+In the incident diagnostic page, Joe quickly goes through the current abnormal status at the beginning and checks the 'Analyzed root cause' part, which is automatically analyzed by the system. It helps quickly pinpoint the issue into specific dimension of 'region=Karachi' and 'category=SUM'. Then he gets to know the most potential root cause. 
 Joe can further confirm this by slicing and dicing on the 'dimension tree', where he can view all the anomaly status on different dimensions, either to double confirm the automatic analysis or evaluate on the issue impact.
 
 ### Further analyze root cause using metrics graph
